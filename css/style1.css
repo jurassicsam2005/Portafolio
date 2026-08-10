@@ -1,0 +1,102 @@
+/* ===========================
+   PROYECTOS ESCOLARES
+=========================== */
+body{
+
+    background-color:black;
+
+}
+
+header{
+
+    background:linear-gradient(135deg,#3a2df0,#00bfff);
+
+    color:white;
+
+    padding:1rem 2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.grid-proyectos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* Flexbox */
+
+.proyecto{
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.3s;
+
+    border:none;
+
+}
+
+.proyecto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contenido{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+.card img{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.badge{
+
+    margin-right:5px;
+
+}
+
+footer{
+
+    background:linear-gradient(135deg,#3a2df0,#00bfff);
+
+    color:white;
+
+    padding:1rem 2rem;
+
+    text-align:center;
+
+}
+
+@media(min-width:992px){
+
+    .grid-proyectos{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}

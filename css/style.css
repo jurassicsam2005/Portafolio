@@ -1,0 +1,190 @@
+/* Centrar todo el contenido principal */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: black;
+  color: white;
+  text-align: center; /* Centra texto por defecto */
+}
+
+/* Header con Flexbox centrado */
+header {
+  background: linear-gradient(135deg, #3a2df0, #00bfff);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column; /* Apila título y menú */
+  align-items: center;    /* Centra horizontalmente */
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+/* Sección proyectos con CSS Grid centrado */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  justify-items: center; /* Centra cada tarjeta */
+}
+
+.proyectos article {
+  background: rgb(30, 103, 238);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 320px; /* Limita ancho para que se vea centrado */
+}
+
+/* Contacto con Bootstrap + Flexbox */
+#contacto .row {
+  display: flex;
+  justify-content: center; /* Centra columnas */
+  text-align: left; /* Para que el texto dentro de las tarjetas no quede raro */
+}
+/* Contenedor del formulario */
+#contacto .card {
+  border-radius: 12px;          /* Bordes redondeados */
+  border: 1px solid #706f6f;       /* Borde suave */
+  padding: 1.5rem;
+  background: #3a3939;          /* Fondo blanco */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra elegante */
+}
+
+/* Centrar el formulario en la sección */
+#contacto .col-md-7 {
+  display: flex;
+  justify-content: center;
+}
+
+#contacto form {
+  width: 100%;
+  max-width: 500px; /* Limita el ancho para que se vea como cuadro */
+  margin: 0 auto;
+}
+
+/* Footer centrado */
+footer {
+  background: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+#proyectos .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Botón Proyectos Escolares */
+#proyectos .btn-primary {
+    background: #0d6efd;
+    color: white;
+}
+
+#proyectos .btn-primary:hover {
+    background: #084298;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(13, 110, 253, 0.35);
+}
+
+/* Botón Proyectos Personales */
+#proyectos .btn-success {
+    background: #198754;
+    color: white;
+}
+
+#proyectos .btn-success:hover {
+    background: #146c43;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(25, 135, 84, 0.35);
+}
+
+/* Botón Proyectos Profesionales */
+#proyectos .btn-dark {
+    background: #212529;
+    color: white;
+}
+
+#proyectos .btn-dark:hover {
+    background: #000;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ==============================
+   BOTONES DEL INICIO
+   ============================== */
+
+#inicio .btn,
+.inicio .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Botón principal */
+#inicio .btn-primary,
+.inicio .btn-primary {
+    background: #0d6efd;
+    color: white;
+}
+
+/* Efecto hover */
+#inicio .btn-primary:hover,
+.inicio .btn-primary:hover {
+    background: white;
+    color: #0d6efd;
+    border-color: #0d6efd;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+
+/* ==============================
+   EFECTO AL PRESIONAR
+   ============================== */
+
+#proyectos .btn:active,
+#inicio .btn:active,
+.inicio .btn:active {
+    transform: scale(0.95);
+}
+
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+
+    #proyectos .btn,
+    #inicio .btn,
+    .inicio .btn {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+}
